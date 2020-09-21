@@ -8,16 +8,16 @@ const useStyles = makeStyles(() => ({
   card: {
     margin: '10px auto',
     textAlign: 'center',
-    cursor: 'pointer',
-    '&:hover': {
-      backgroundColor: '#ED6D51'
-    }
+    cursor: 'pointer'
   },
   cardContent: {
     backgroundColor: 'none',
     '&:last-child': {
       padding: '10px',
       paddingBottom: '10px'
+    },
+    '&:hover': {
+      backgroundColor: '#ED6D51'
     }
   },
   header: {

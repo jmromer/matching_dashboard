@@ -8,17 +8,19 @@ import { useStyles } from '../styles'
 
 function UserList ({ title, idType, users, selections, setSelection }) {
   const styles = useStyles()
+
   return (
     <>
       <Paper className={styles.header}>{title}</Paper>
       <div>
         {users.map(user => {
           const isSelected = user.id === selections[idType]
+
           return (
             <Card
               key={user.id}
+              style={{ backgroundColor: isSelected ? '#bbdefb' : '#fff' }}
               className={styles.card}
-              style={{ backgroundColor: isSelected ? '#BBDEFB' : 'none' }}
             >
               <CardContent className={styles.cardContent}>
                 <div
