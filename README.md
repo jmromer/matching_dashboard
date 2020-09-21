@@ -26,3 +26,10 @@ Features
 
 - See a list of matched clients and experts
 - Match unmatched clients and experts
+
+Demo
+--------
+
+![demo](app/assets/images/dashboard.gif)
+
+)
