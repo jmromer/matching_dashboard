@@ -3,9 +3,9 @@
 # .NET, PHP, Python, Node, and Go applications with deep visibility and low
 # overhead.  For more information, visit www.newrelic.com.
 #
-# Generated July 19, 2020
+# Generated September 21, 2020
 #
-# This configuration file is custom generated for app178262797@heroku.com
+# This configuration file is custom generated for NewRelic Administration
 #
 # For full documentation of agent configuration options, please refer to
 # https://docs.newrelic.com/docs/agents/ruby-agent/installation-configuration/ruby-agent-configuration
@@ -14,9 +14,13 @@ common: &default_settings
   # Required license key associated with your New Relic account.
   license_key: <%= Rails.application.credentials.dig(:newrelic, :license_key) %>
 
+
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
   app_name: matching_dashboard
+
+  distributed_tracing:
+    enabled: true
 
   # To disable the agent regardless of other settings, uncomment the following:
   # agent_enabled: false
@@ -30,7 +34,7 @@ common: &default_settings
 # If your application has other named environments, configure them here.
 development:
   <<: *default_settings
-  app_name: matching_dashboard_development
+  app_name: matching_dashboard (Development)
 
 test:
   <<: *default_settings
@@ -39,7 +43,7 @@ test:
 
 staging:
   <<: *default_settings
-  app_name: matching_dashboard_staging
+  app_name: matching_dashboard (Staging)
 
 production:
   <<: *default_settings
