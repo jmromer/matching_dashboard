@@ -19,7 +19,7 @@ Dependencies
 - React.js
 - Material UI
 
-Versions in `.tool-versions`.
+Versions in `.tool-versions`, `Gemfile`, and `package.json`.
 
 Features
 --------
@@ -31,5 +31,3 @@ Demo
 --------
 
 ![demo](app/assets/images/dashboard.gif)
-
-)
